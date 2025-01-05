@@ -50,6 +50,11 @@ write_to = "src/sacra/_version.py"
 [tool.pytest.ini_options]
 addopts = "--cov --cov-report term-missing"
 
+[tool.coverage.run]
+omit = [
+    "_version.py",
+]
+
 [tool.ruff]
 line-length = 88
 exclude = ["_version.py"]
