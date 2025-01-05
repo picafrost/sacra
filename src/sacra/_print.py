@@ -15,7 +15,7 @@ FAIL = f" {BOLD}{R}⨯{END} {PROMPT}"
 
 
 class Print(Protocol):
-    """Protocol using for typing these print functions."""
+    """Protocol used for typing print functions in this module."""
 
     def __call__(self, msg: str, stderr: bool = ...) -> None:
         """Indicate the function signature."""
